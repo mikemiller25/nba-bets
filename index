@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Betting Intelligence Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#090a0f',
+                        cardbg: '#12151c',
+                        cardhover: '#1a1f2b',
+                        accent: '#2563eb',
+                        neonext: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #090a0f; color: #f3f4f6; font-family: system-ui, -apple-system, sans-serif; }
+        .glass-panel { background: rgba(18, 21, 28, 0.85); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.06); }
+        .glow-border:hover { border-color: rgba(37, 99, 235, 0.4); box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-accent selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="glass-panel sticky top-0 z-40 border-b border-gray-800/80 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="h-2.5 w-2.5 bg-accent rounded-full"></div>
+            <h1 class="text-base font-semibold tracking-wide text-white">NBA // <span class="text-accent font-bold">ANALYTICS</span></h1>
+        </div>
+        <div class="flex items-center space-x-1.5 text-xs font-medium">
+            <button onclick="switchTab('slate')" id="btn-slate" class="px-3.5 py-1.5 rounded-lg bg-accent text-white transition">Live Slate</button>
+            <button onclick="switchTab('compare')" id="btn-compare" class="px-3.5 py-1.5 rounded-lg text-gray-400 hover:text-white transition">Team Compare</button>
+            <button onclick="switchTab('json')" id="btn-json" class="px-3.5 py-1.5 rounded-lg text-gray-400 hover:text-white transition">JSON Feed</button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 lg:p-8 space-y-6">
+
+        <!-- STATUS BAR -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between glass-panel p-4 rounded-xl text-xs text-gray-400 gap-2">
+            <div>Data Pipeline Feed: <span id="sync-status" class="text-neonext font-mono">Loading data.json...</span></div>
+            <div id="last-updated-time" class="font-mono text-gray-500">Synced: --</div>
+        </div>
+
+        <!-- TAB 1: LIVE SLATE VIEW -->
+        <section id="tab-slate" class="space-y-4">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xs uppercase tracking-wider font-semibold text-gray-400">Today's Matchups & Edge Finder</h2>
+                <span class="text-xs text-gray-500">Click card for Deep Dive</span>
+            </div>
+            <!-- Dynamic Cards Container -->
+            <div id="matchup-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- TAB 2: TEAM COMPARATOR -->
+        <section id="tab-compare" class="hidden space-y-4">
+            <div class="glass-panel p-6 rounded-2xl space-y-6">
+                <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-300">Head-to-Head Team L5 Comparator</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase text-gray-500 mb-1.5">Select Team A</label>
+                        <select id="compare-team-a" onchange="runComparison()" class="w-full bg-darkbg border border-gray-800 rounded-xl p-3 text-white text-sm focus:outline-none focus:border-accent">
+                            <option value="Boston Celtics">Boston Celtics</option>
+                            <option value="New York Knicks">New York Knicks</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase text-gray-500 mb-1.5">Select Team B</label>
+                        <select id="compare-team-b" onchange="runComparison()" class="w-full bg-darkbg border border-gray-800 rounded-xl p-3 text-white text-sm focus:outline-none focus:border-accent">
+                            <option value="Miami Heat">Miami Heat</option>
+                            <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="comparison-results" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-gray-800">
+                    <!-- Comparison Output -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: RAW JSON FEED INSPECTOR -->
+        <section id="tab-json" class="hidden space-y-4">
+            <div class="glass-panel p-6 rounded-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-300">Underlying GitHub Action Payload (`data.json`)</h2>
+                    <button onclick="navigator.clipboard.writeText(JSON.stringify(globalData, null, 2)); alert('Copied JSON to clipboard!');" class="text-xs bg-accent hover:bg-blue-600 text-white px-3 py-1.5 rounded-lg transition">Copy JSON</button>
+                </div>
+                <pre id="json-viewer" class="bg-darkbg p-4 rounded-xl text-xs font-mono text-neonext overflow-x-auto max-h-[500px] border border-gray-800"></pre>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DEEP DIVE MODAL -->
+    <div id="deep-dive-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+        <div class="glass-panel max-w-2xl w-full p-6 rounded-2xl space-y-6 relative max-h-[90vh] overflow-y-auto border border-gray-700/60">
+            <button onclick="closeDeepDive()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg font-bold">&times;</button>
+            <div id="modal-content" class="space-y-6">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800/80 py-6 text-center text-xs text-gray-500">
+        NBA Betting Intelligence Engine // Automated via GitHub Actions & ESPN Public API
+    </footer>
+
+    <!-- App Logic Script -->
+    <script>
+        let globalData = null;
+
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error("Failed to load data.json");
+                globalData = await response.json();
+                
+                document.getElementById('sync-status').innerText = "Live Data Connected";
+                document.getElementById('sync-status').className = "text-neonext font-mono";
+                document.getElementById('last-updated-time').innerText = `Synced: ${globalData.last_updated}`;
+                
+                renderSlate();
+                renderJsonViewer();
+                runComparison();
+            } catch (err) {
+                console.warn("Falling back to sample fallback payload:", err);
+                document.getElementById('sync-status').innerText = "Standalone Preview Mode (Fallback Active)";
+                document.getElementById('sync-status').className = "text-yellow-400 font-mono";
+                
+                globalData = {
+                    last_updated: "2026-10-14 12:00:00 UTC",
+                    slate: [
+                        {
+                            id: "heat-celtics",
+                            time: "7:30 PM ET",
+                            home: "Boston Celtics",
+                            away: "Miami Heat",
+                            home_record: "42-20",
+                            away_record: "35-27",
+                            home_metrics: { l5_ppg: 112.5, l5_opp_ppg: 106.0, l5_diff: 6.5, l5_win_rate: "80%" },
+                            away_metrics: { l5_ppg: 108.0, l5_opp_ppg: 109.5, l5_diff: -1.5, l5_win_rate: "40%" },
+                            consensus_spread: "Celtics -4.5",
+                            implied_total: "224.5",
+                            model_edge: "+5.2% Edge on Home",
+                            players: [
+                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" },
+                                { name: "Jimmy Butler", position: "SF", prop: "Points", line: 21.5, l5_avg: 23.0, hit_rate: "60% L5", vs_opponent_home: "20.5 PTS (L3 Home)", vs_opponent_away: "22.5 PTS (L3 Away)" }
+                            ]
+                        },
+                        {
+                            id: "76ers-knicks",
+                            time: "10:00 PM ET",
+                            home: "New York Knicks",
+                            away: "Philadelphia 76ers",
+                            home_record: "39-23",
+                            away_record: "38-24",
+                            home_metrics: { l5_ppg: 110.2, l5_opp_ppg: 104.1, l5_diff: 6.1, l5_win_rate: "80%" },
+                            away_metrics: { l5_ppg: 114.1, l5_opp_ppg: 111.0, l5_diff: 3.1, l5_win_rate: "60%" },
+                            consensus_spread: "Knicks -2.5",
+                            implied_total: "218.5",
+                            model_edge: "+3.8% Edge on Under",
+                            players: [
+                                { name: "Jalen Brunson", position: "PG", prop: "Points", line: 28.5, l5_avg: 31.0, hit_rate: "80% L5", vs_opponent_home: "29.8 PTS (L3 Home)", vs_opponent_away: "27.5 PTS (L3 Away)" },
+                                { name: "Joel Embiid", position: "C", prop: "Points", line: 32.5, l5_avg: 30.5, hit_rate: "40% L5", vs_opponent_home: "34.0 PTS (L3 Home)", vs_opponent_away: "31.2 PTS (L3 Away)" }
+                            ]
+                        }
+                    ]
+                };
+                renderSlate();
+                renderJsonViewer();
+                runComparison();
+            }
+        }
+
+        function renderSlate() {
+            const container = document.getElementById('matchup-cards-container');
+            container.innerHTML = '';
+
+            globalData.slate.forEach(match => {
+                const card = document.createElement('div');
+                card.className = "glass-panel p-5 rounded-2xl glow-border cursor-pointer transition space-y-4";
+                card.onclick = () => openDeepDive(match.id);
+
+                card.innerHTML = `
+                    <div class="flex items-center justify-between text-xs text-gray-400">
+                        <span class="font-mono bg-darkbg px-2.5 py-1 rounded border border-gray-800">${match.time}</span>
+                        <span class="text-neonext font-medium">${match.model_edge}</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center font-semibold text-white text-sm">
+                            <span>${match.away} <span class="text-xs text-gray-500">(${match.away_record})</span></span>
+                            <span class="font-mono text-xs text-gray-300">${match.away_metrics.l5_ppg} PPG</span>
+                        </div>
+                        <div class="flex justify-between items-center font-semibold text-white text-sm">
+                            <span>${match.home} <span class="text-xs text-gray-500">(${match.home_record})</span></span>
+                            <span class="font-mono text-xs text-gray-300">${match.home_metrics.l5_ppg} PPG</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-gray-800/80 flex items-center justify-between text-xs text-gray-400">
+                        <span>Spread: <strong class="text-white">${match.consensus_spread}</strong></span>
+                        <span>Total: <strong class="text-white">${match.implied_total}</strong></span>
+                        <span class="text-accent font-medium hover:underline">Deep Dive &rarr;</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function openDeepDive(matchId) {
+            const match = globalData.slate.find(m => m.id === matchId);
+            if (!match) return;
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="space-y-1">
+                    <div class="text-xs font-mono text-accent">MATCHUP DEEP DIVE</div>
+                    <h2 class="text-lg font-bold text-white">${match.away} @ ${match.home}</h2>
+                    <p class="text-xs text-gray-400">Consensus Spread: ${match.consensus_spread} | Implied Total: ${match.implied_total}</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 pt-1">
+                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-1">
+                        <div class="text-xs text-gray-400 font-medium">${match.away} (L5)</div>
+                        <div class="text-xs font-mono text-white">PPG: ${match.away_metrics.l5_ppg}</div>
+                        <div class="text-xs font-mono text-gray-400">Opp PPG: ${match.away_metrics.l5_opp_ppg}</div>
+                        <div class="text-xs font-mono text-neonext">Win Rate: ${match.away_metrics.l5_win_rate}</div>
+                    </div>
+                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-1">
+                        <div class="text-xs text-gray-400 font-medium">${match.home} (L5)</div>
+                        <div class="text-xs font-mono text-white">PPG: ${match.home_metrics.l5_ppg}</div>
+                        <div class="text-xs font-mono text-gray-400">Opp PPG: ${match.home_metrics.l5_opp_ppg}</div>
+                        <div class="text-xs font-mono text-neonext">Win Rate: ${match.home_metrics.l5_win_rate}</div>
+                    </div>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Key Player Props & Historical Splits</h3>
+                    <div class="space-y-2">
+                        ${match.players.map(p => `
+                            <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2.5">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold text-white text-xs">${p.name} <span class="text-gray-500">(${p.position})</span></span>
+                                    <span class="text-xs font-mono bg-accent/15 text-blue-400 px-2 py-0.5 rounded">${p.prop} Line:
