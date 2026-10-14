@@ -123,9 +123,12 @@
 
         async function loadData() {
             try {
-                // Fixed relative path with cache-buster for subpath hosting compatibility
-                const response = await fetch('./data.json?t=' + Date.now());
-                if (!response.ok) throw new Error("Failed to load data.json");
+                console.log("Attempting to fetch data.json...");
+                // Construct path explicitly based on current location pathname
+                const basePath = window.location.pathname.includes('/nba-bets/') ? '/nba-bets/data.json' : './data.json';
+                const response = await fetch(basePath + '?t=' + Date.now());
+                
+                if (!response.ok) throw new Error("HTTP status " + response.status);
                 globalData = await response.json();
                 
                 document.getElementById('sync-status').innerText = "Live Data Connected";
@@ -136,10 +139,11 @@
                 renderJsonViewer();
                 runComparison();
             } catch (err) {
-                console.warn("Falling back to sample fallback payload:", err);
+                console.error("Fetch failed, triggering fallback mode. Error:", err);
                 document.getElementById('sync-status').innerText = "Standalone Preview Mode (Fallback Active)";
                 document.getElementById('sync-status').className = "text-yellow-400 font-mono";
                 
+                // Fallback payload so UI populates immediately even if fetch fails
                 globalData = {
                     last_updated: "2026-10-14 12:00:00 UTC",
                     slate: [
@@ -156,25 +160,7 @@
                             implied_total: "224.5",
                             model_edge: "+5.2% Edge on Home",
                             players: [
-                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" },
-                                { name: "Jimmy Butler", position: "SF", prop: "Points", line: 21.5, l5_avg: 23.0, hit_rate: "60% L5", vs_opponent_home: "20.5 PTS (L3 Home)", vs_opponent_away: "22.5 PTS (L3 Away)" }
-                            ]
-                        },
-                        {
-                            id: "76ers-knicks",
-                            time: "10:00 PM ET",
-                            home: "New York Knicks",
-                            away: "Philadelphia 76ers",
-                            home_record: "39-23",
-                            away_record: "38-24",
-                            home_metrics: { l5_ppg: 110.2, l5_opp_ppg: 104.1, l5_diff: 6.1, l5_win_rate: "80%" },
-                            away_metrics: { l5_ppg: 114.1, l5_opp_ppg: 111.0, l5_diff: 3.1, l5_win_rate: "60%" },
-                            consensus_spread: "Knicks -2.5",
-                            implied_total: "218.5",
-                            model_edge: "+3.8% Edge on Under",
-                            players: [
-                                { name: "Jalen Brunson", position: "PG", prop: "Points", line: 28.5, l5_avg: 31.0, hit_rate: "80% L5", vs_opponent_home: "29.8 PTS (L3 Home)", vs_opponent_away: "27.5 PTS (L3 Away)" },
-                                { name: "Joel Embiid", position: "C", prop: "Points", line: 32.5, l5_avg: 30.5, hit_rate: "40% L5", vs_opponent_home: "34.0 PTS (L3 Home)", vs_opponent_away: "31.2 PTS (L3 Away)" }
+                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" }
                             ]
                         }
                     ]
@@ -184,7 +170,6 @@
                 runComparison();
             }
         }
-
         function renderSlate() {
             const container = document.getElementById('matchup-cards-container');
             container.innerHTML = '';
