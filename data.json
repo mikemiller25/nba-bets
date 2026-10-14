@@ -1,75 +1,173 @@
 {
-    "last_updated": "2026-10-14 22:31:05 UTC",
+    "last_updated": "2026-10-14 22:40:45 UTC",
     "slate": [
         {
-            "id": "heat-@-celtics",
-            "time": "7:30 PM ET",
-            "home": "Boston Celtics",
-            "away": "Miami Heat",
-            "home_record": "42-20",
-            "away_record": "35-27",
+            "id": "401898404",
+            "time": "Wed, October 14th at 7:30 PM EDT",
+            "home": "Miami Heat",
+            "away": "Brooklyn Nets",
+            "home_record": "2-1",
+            "away_record": "3-0",
             "home_metrics": {
-                "l5_ppg": 134.0,
-                "l5_opp_ppg": 109.5,
-                "l5_diff": 24.5,
-                "l5_win_rate": "100%"
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
             },
             "away_metrics": {
-                "l5_ppg": 127.0,
-                "l5_opp_ppg": 116.0,
-                "l5_diff": 11.0,
-                "l5_win_rate": "67%"
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
             },
-            "consensus_spread": "Celtics -4.5",
-            "implied_total": "224.5",
-            "model_edge": "+5.2% Edge on Home",
-            "players": [
-                {
-                    "name": "Jayson Tatum",
-                    "position": "SF",
-                    "prop": "Points",
-                    "line": 27.5,
-                    "l5_avg": 29.2,
-                    "hit_rate": "80% L5",
-                    "vs_opponent_home": "28.5 PTS (L3 Home)",
-                    "vs_opponent_away": "26.0 PTS (L3 Away)"
-                }
-            ]
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
         },
         {
-            "id": "76ers-@-knicks",
-            "time": "7:30 PM ET",
-            "home": "New York Knicks",
-            "away": "Philadelphia 76ers",
-            "home_record": "42-20",
-            "away_record": "35-27",
+            "id": "401898405",
+            "time": "Wed, October 14th at 7:30 PM EDT",
+            "home": "Boston Celtics",
+            "away": "Charlotte Hornets",
+            "home_record": "2-0",
+            "away_record": "1-1",
             "home_metrics": {
-                "l5_ppg": 102.0,
-                "l5_opp_ppg": 125.2,
-                "l5_diff": -23.2,
-                "l5_win_rate": "0%"
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
             },
             "away_metrics": {
-                "l5_ppg": 111.3,
-                "l5_opp_ppg": 118.3,
-                "l5_diff": -7.0,
-                "l5_win_rate": "33%"
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
             },
-            "consensus_spread": "Knicks -4.5",
-            "implied_total": "224.5",
-            "model_edge": "+5.2% Edge on Home",
-            "players": [
-                {
-                    "name": "Jimmy Butler",
-                    "position": "SF",
-                    "prop": "Points",
-                    "line": 27.5,
-                    "l5_avg": 29.2,
-                    "hit_rate": "80% L5",
-                    "vs_opponent_home": "28.5 PTS (L3 Home)",
-                    "vs_opponent_away": "26.0 PTS (L3 Away)"
-                }
-            ]
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401898722",
+            "time": "Wed, October 14th at 8:00 PM EDT",
+            "home": "San Antonio Spurs",
+            "away": "Phoenix Suns",
+            "home_record": "0-3",
+            "away_record": "1-2",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401901825",
+            "time": "Wed, October 14th at 8:00 PM EDT",
+            "home": "Dallas Mavericks",
+            "away": "New Orleans Pelicans",
+            "home_record": "1-1",
+            "away_record": "1-1",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401908942",
+            "time": "Wed, October 14th at 8:00 PM EDT",
+            "home": "Milwaukee Bucks",
+            "away": "Chicago Bulls",
+            "home_record": "1-2",
+            "away_record": "1-2",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401914125",
+            "time": "Wed, October 14th at 8:00 PM EDT",
+            "home": "Minnesota Timberwolves",
+            "away": "Detroit Pistons",
+            "home_record": "3-1",
+            "away_record": "1-1",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401918011",
+            "time": "Wed, October 14th at 10:30 PM EDT",
+            "home": "LA Clippers",
+            "away": "Denver Nuggets",
+            "home_record": "1-1",
+            "away_record": "2-1",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
         }
     ]
 }
