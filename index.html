@@ -123,27 +123,23 @@
 
         async function loadData() {
             try {
-                console.log("Attempting to fetch data.json...");
-                // Construct path explicitly based on current location pathname
-                const basePath = window.location.pathname.includes('/nba-bets/') ? '/nba-bets/data.json' : './data.json';
-                const response = await fetch(basePath + '?t=' + Date.now());
+                const response = await fetch('data.json?t=' + Date.now());
+                if (!response.ok) throw new Error("HTTP error! status: " + response.status);
                 
-                if (!response.ok) throw new Error("HTTP status " + response.status);
                 globalData = await response.json();
                 
                 document.getElementById('sync-status').innerText = "Live Data Connected";
                 document.getElementById('sync-status').className = "text-neonext font-mono";
-                document.getElementById('last-updated-time').innerText = `Synced: ${globalData.last_updated}`;
+                document.getElementById('last-updated-time').innerText = `Synced: ${globalData.last_updated || 'Just now'}`;
                 
                 renderSlate();
                 renderJsonViewer();
                 runComparison();
             } catch (err) {
-                console.error("Fetch failed, triggering fallback mode. Error:", err);
+                console.warn("Fetch error, falling back to preview payload:", err);
                 document.getElementById('sync-status').innerText = "Standalone Preview Mode (Fallback Active)";
                 document.getElementById('sync-status').className = "text-yellow-400 font-mono";
                 
-                // Fallback payload so UI populates immediately even if fetch fails
                 globalData = {
                     last_updated: "2026-10-14 12:00:00 UTC",
                     slate: [
@@ -160,7 +156,25 @@
                             implied_total: "224.5",
                             model_edge: "+5.2% Edge on Home",
                             players: [
-                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" }
+                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" },
+                                { name: "Jimmy Butler", position: "SF", prop: "Points", line: 21.5, l5_avg: 23.0, hit_rate: "60% L5", vs_opponent_home: "20.5 PTS (L3 Home)", vs_opponent_away: "22.5 PTS (L3 Away)" }
+                            ]
+                        },
+                        {
+                            id: "76ers-knicks",
+                            time: "10:00 PM ET",
+                            home: "New York Knicks",
+                            away: "Philadelphia 76ers",
+                            home_record: "39-23",
+                            away_record: "38-24",
+                            home_metrics: { l5_ppg: 110.2, l5_opp_ppg: 104.1, l5_diff: 6.1, l5_win_rate: "80%" },
+                            away_metrics: { l5_ppg: 114.1, l5_opp_ppg: 111.0, l5_diff: 3.1, l5_win_rate: "60%" },
+                            consensus_spread: "Knicks -2.5",
+                            implied_total: "218.5",
+                            model_edge: "+3.8% Edge on Under",
+                            players: [
+                                { name: "Jalen Brunson", position: "PG", prop: "Points", line: 28.5, l5_avg: 31.0, hit_rate: "80% L5", vs_opponent_home: "29.8 PTS (L3 Home)", vs_opponent_away: "27.5 PTS (L3 Away)" },
+                                { name: "Joel Embiid", position: "C", prop: "Points", line: 32.5, l5_avg: 30.5, hit_rate: "40% L5", vs_opponent_home: "34.0 PTS (L3 Home)", vs_opponent_away: "31.2 PTS (L3 Away)" }
                             ]
                         }
                     ]
@@ -170,8 +184,154 @@
                 runComparison();
             }
         }
+
         function renderSlate() {
             const container = document.getElementById('matchup-cards-container');
             container.innerHTML = '';
 
-            globalData.slate
+            globalData.slate.forEach(match => {
+                const card = document.createElement('div');
+                card.className = "glass-panel p-5 rounded-2xl glow-border cursor-pointer transition space-y-4";
+                card.onclick = () => openDeepDive(match.id);
+
+                card.innerHTML = `
+                    <div class="flex items-center justify-between text-xs text-gray-400">
+                        <span class="font-mono bg-darkbg px-2.5 py-1 rounded border border-gray-800">${match.time}</span>
+                        <span class="text-neonext font-medium">${match.model_edge}</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center font-semibold text-white text-sm">
+                            <span>${match.away} <span class="text-xs text-gray-500">(${match.away_record})</span></span>
+                            <span class="font-mono text-xs text-gray-300">${match.away_metrics.l5_ppg} PPG</span>
+                        </div>
+                        <div class="flex justify-between items-center font-semibold text-white text-sm">
+                            <span>${match.home} <span class="text-xs text-gray-500">(${match.home_record})</span></span>
+                            <span class="font-mono text-xs text-gray-300">${match.home_metrics.l5_ppg} PPG</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-gray-800/80 flex items-center justify-between text-xs text-gray-400">
+                        <span>Spread: <strong class="text-white">${match.consensus_spread}</strong></span>
+                        <span>Total: <strong class="text-white">${match.implied_total}</strong></span>
+                        <span class="text-accent font-medium hover:underline">Deep Dive &rarr;</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function openDeepDive(matchId) {
+            const match = globalData.slate.find(m => m.id === matchId);
+            if (!match) return;
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="space-y-1">
+                    <div class="text-xs font-mono text-accent">MATCHUP DEEP DIVE</div>
+                    <h2 class="text-lg font-bold text-white">${match.away} @ ${match.home}</h2>
+                    <p class="text-xs text-gray-400">Consensus Spread: ${match.consensus_spread} | Implied Total: ${match.implied_total}</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 pt-1">
+                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-1">
+                        <div class="text-xs text-gray-400 font-medium">${match.away} (L5)</div>
+                        <div class="text-xs font-mono text-white">PPG: ${match.away_metrics.l5_ppg}</div>
+                        <div class="text-xs font-mono text-gray-400">Opp PPG: ${match.away_metrics.l5_opp_ppg}</div>
+                        <div class="text-xs font-mono text-neonext">Win Rate: ${match.away_metrics.l5_win_rate}</div>
+                    </div>
+                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-1">
+                        <div class="text-xs text-gray-400 font-medium">${match.home} (L5)</div>
+                        <div class="text-xs font-mono text-white">PPG: ${match.home_metrics.l5_ppg}</div>
+                        <div class="text-xs font-mono text-gray-400">Opp PPG: ${match.home_metrics.l5_opp_ppg}</div>
+                        <div class="text-xs font-mono text-neonext">Win Rate: ${match.home_metrics.l5_win_rate}</div>
+                    </div>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Key Player Props & Historical Splits</h3>
+                    <div class="space-y-2">
+                        ${match.players.map(p => `
+                            <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2.5">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold text-white text-xs">${p.name} <span class="text-gray-500">(${p.position})</span></span>
+                                    <span class="text-xs font-mono bg-accent/15 text-blue-400 px-2 py-0.5 rounded">${p.prop} Line:${p.line}</span>
+                                </div>
+                                <div class="grid grid-cols-3 gap-2 text-xs font-mono text-gray-300 pt-2 border-t border-gray-800/60">
+                                    <div>L5 Avg: <strong class="text-white">${p.l5_avg}</strong></div>
+                                    <div>Hit Rate: <strong class="text-neonext">${p.hit_rate}</strong></div>
+                                    <div>Matchup: <strong class="text-accent">Favorable</strong></div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono bg-cardbg p-2.5 rounded-lg text-gray-400 border border-gray-800/40">
+                                    <div>🏠 Home vs Team: <span class="text-white">${p.vs_opponent_home}</span></div>
+                                    <div>✈️ Away vs Team: <span class="text-white">${p.vs_opponent_away}</span></div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('deep-dive-modal').classList.remove('hidden');
+            document.getElementById('deep-dive-modal').classList.add('flex');
+        }
+
+        function closeDeepDive() {
+            document.getElementById('deep-dive-modal').classList.remove('flex');
+            document.getElementById('deep-dive-modal').classList.add('hidden');
+        }
+
+        function switchTab(tab) {
+            ['slate', 'compare', 'json'].forEach(t => {
+                document.getElementById(`tab-${t}`).classList.add('hidden');
+                document.getElementById(`btn-${t}`).className = "px-3.5 py-1.5 rounded-lg text-gray-400 hover:text-white transition";
+            });
+            document.getElementById(`tab-${tab}`).classList.remove('hidden');
+            document.getElementById(`btn-${tab}`).className = "px-3.5 py-1.5 rounded-lg bg-accent text-white font-medium transition";
+        }
+
+        function renderJsonViewer() {
+            document.getElementById('json-viewer').innerText = JSON.stringify(globalData, null, 2);
+        }
+
+        function runComparison() {
+            const teamA = document.getElementById('compare-team-a').value;
+            const teamB = document.getElementById('compare-team-b').value;
+
+            let metricsA = { l5_ppg: 111.0, l5_opp_ppg: 107.0, l5_diff: 4.0, l5_win_rate: "70%" };
+            let metricsB = { l5_ppg: 109.0, l5_opp_ppg: 108.5, l5_diff: 0.5, l5_win_rate: "50%" };
+
+            if (globalData && globalData.slate) {
+                globalData.slate.forEach(m => {
+                    if (m.home === teamA) metricsA = m.home_metrics;
+                    if (m.away === teamA) metricsA = m.away_metrics;
+                    if (m.home === teamB) metricsB = m.home_metrics;
+                    if (m.away === teamB) metricsB = m.away_metrics;
+                });
+            }
+
+            const container = document.getElementById('comparison-results');
+            container.innerHTML = `
+                <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-2">
+                    <h3 class="font-bold text-white text-xs uppercase tracking-wider text-accent">${teamA}</h3>
+                    <div class="text-xs font-mono space-y-1 text-gray-300">
+                        <div>L5 PPG: <span class="text-white">${metricsA.l5_ppg}</span></div>
+                        <div>L5 Opp PPG: <span class="text-white">${metricsA.l5_opp_ppg}</span></div>
+                        <div>Point Diff: <span class="text-neonext">+${metricsA.l5_diff}</span></div>
+                        <div>Win Rate: <span class="text-white">${metricsA.l5_win_rate}</span></div>
+                    </div>
+                </div>
+                <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-2">
+                    <h3 class="font-bold text-white text-xs uppercase tracking-wider text-accent">${teamB}</h3>
+                    <div class="text-xs font-mono space-y-1 text-gray-300">
+                        <div>L5 PPG: <span class="text-white">${metricsB.l5_ppg}</span></div>
+                        <div>L5 Opp PPG: <span class="text-white">${metricsB.l5_opp_ppg}</span></div>
+                        <div>Point Diff: <span class="text-neonext">+${metricsB.l5_diff}</span></div>
+                        <div>Win Rate: <span class="text-white">${metricsB.l5_win_rate}</span></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        window.onload = loadData;
+    </script>
+</body>
+</html>
