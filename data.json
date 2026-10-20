@@ -1,4 +1,77 @@
 {
-    "last_updated": "2026-10-19 10:23:25 UTC",
-    "slate": []
+    "last_updated": "2026-10-20 10:17:33 UTC",
+    "slate": [
+        {
+            "id": "401909088",
+            "time": "Tue, October 20th at 3:00 PM EDT",
+            "home": "Detroit Pistons",
+            "away": "Boston Celtics",
+            "home_record": "0-0",
+            "away_record": "0-0",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401909089",
+            "time": "Tue, October 20th at 7:00 PM EDT",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "home_record": "0-0",
+            "away_record": "0-0",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401909090",
+            "time": "Tue, October 20th at 9:30 PM EDT",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "home_record": "0-0",
+            "away_record": "0-0",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        }
+    ]
 }
