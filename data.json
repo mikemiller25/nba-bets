@@ -1,61 +1,13 @@
 {
-    "last_updated": "2026-10-23 10:21:02 UTC",
+    "last_updated": "2026-10-24 10:15:39 UTC",
     "slate": [
         {
-            "id": "401909848",
-            "time": "Fri, October 23rd at 4:00 PM EDT",
-            "home": "Milwaukee Bucks",
-            "away": "Chicago Bulls",
-            "home_record": "0-1",
-            "away_record": "0-1",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909095",
-            "time": "Fri, October 23rd at 7:00 PM EDT",
-            "home": "Boston Celtics",
-            "away": "New York Knicks",
-            "home_record": "0-1",
-            "away_record": "0-1",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909843",
-            "time": "Fri, October 23rd at 7:00 PM EDT",
+            "id": "401909853",
+            "time": "Sat, October 24th at 6:00 PM EDT",
             "home": "Charlotte Hornets",
-            "away": "Atlanta Hawks",
-            "home_record": "1-0",
-            "away_record": "1-0",
+            "away": "Miami Heat",
+            "home_record": "1-1",
+            "away_record": "0-2",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -74,11 +26,11 @@
             "players": []
         },
         {
-            "id": "401909844",
-            "time": "Fri, October 23rd at 7:00 PM EDT",
-            "home": "Indiana Pacers",
-            "away": "Dallas Mavericks",
-            "home_record": "1-0",
+            "id": "401909854",
+            "time": "Sat, October 24th at 7:30 PM EDT",
+            "home": "Cleveland Cavaliers",
+            "away": "Brooklyn Nets",
+            "home_record": "0-1",
             "away_record": "0-1",
             "home_metrics": {
                 "l5_ppg": 110.0,
@@ -98,12 +50,12 @@
             "players": []
         },
         {
-            "id": "401909845",
-            "time": "Fri, October 23rd at 7:00 PM EDT",
-            "home": "Orlando Magic",
-            "away": "Minnesota Timberwolves",
-            "home_record": "0-1",
-            "away_record": "1-0",
+            "id": "401909855",
+            "time": "Sat, October 24th at 7:30 PM EDT",
+            "home": "Philadelphia 76ers",
+            "away": "Milwaukee Bucks",
+            "home_record": "2-0",
+            "away_record": "0-2",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -122,12 +74,12 @@
             "players": []
         },
         {
-            "id": "401909846",
-            "time": "Fri, October 23rd at 7:00 PM EDT",
-            "home": "Washington Wizards",
-            "away": "Toronto Raptors",
-            "home_record": "1-0",
-            "away_record": "1-0",
+            "id": "401909857",
+            "time": "Sat, October 24th at 8:00 PM EDT",
+            "home": "Chicago Bulls",
+            "away": "Washington Wizards",
+            "home_record": "1-1",
+            "away_record": "1-1",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -146,12 +98,12 @@
             "players": []
         },
         {
-            "id": "401909847",
-            "time": "Fri, October 23rd at 8:00 PM EDT",
-            "home": "Miami Heat",
-            "away": "Detroit Pistons",
-            "home_record": "0-1",
-            "away_record": "1-0",
+            "id": "401909858",
+            "time": "Sat, October 24th at 8:00 PM EDT",
+            "home": "Dallas Mavericks",
+            "away": "San Antonio Spurs",
+            "home_record": "1-1",
+            "away_record": "0-2",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -170,12 +122,12 @@
             "players": []
         },
         {
-            "id": "401909096",
-            "time": "Fri, October 23rd at 9:30 PM EDT",
-            "home": "San Antonio Spurs",
+            "id": "401909856",
+            "time": "Sat, October 24th at 8:30 PM EDT",
+            "home": "Atlanta Hawks",
             "away": "Houston Rockets",
-            "home_record": "0-1",
-            "away_record": "1-0",
+            "home_record": "2-0",
+            "away_record": "2-0",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -194,12 +146,12 @@
             "players": []
         },
         {
-            "id": "401909849",
-            "time": "Fri, October 23rd at 9:30 PM EDT",
-            "home": "Utah Jazz",
+            "id": "401909859",
+            "time": "Sat, October 24th at 9:00 PM EDT",
+            "home": "Denver Nuggets",
             "away": "New Orleans Pelicans",
             "home_record": "0-1",
-            "away_record": "0-1",
+            "away_record": "0-2",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -218,60 +170,12 @@
             "players": []
         },
         {
-            "id": "401909850",
-            "time": "Fri, October 23rd at 10:00 PM EDT",
-            "home": "Golden State Warriors",
-            "away": "Memphis Grizzlies",
+            "id": "401909860",
+            "time": "Sat, October 24th at 10:00 PM EDT",
+            "home": "Phoenix Suns",
+            "away": "Golden State Warriors",
             "home_record": "0-1",
-            "away_record": "1-0",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909851",
-            "time": "Fri, October 23rd at 10:00 PM EDT",
-            "home": "Los Angeles Lakers",
-            "away": "LA Clippers",
-            "home_record": "1-0",
-            "away_record": "1-0",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909852",
-            "time": "Fri, October 23rd at 10:00 PM EDT",
-            "home": "Sacramento Kings",
-            "away": "Portland Trail Blazers",
-            "home_record": "0-1",
-            "away_record": "1-0",
+            "away_record": "0-2",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
