@@ -1,61 +1,13 @@
 {
-    "last_updated": "2026-10-26 10:29:02 UTC",
+    "last_updated": "2026-10-27 10:27:05 UTC",
     "slate": [
         {
-            "id": "401909868",
-            "time": "Mon, October 26th at 7:00 PM EDT",
-            "home": "Charlotte Hornets",
-            "away": "Washington Wizards",
-            "home_record": "2-1",
-            "away_record": "2-1",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909869",
-            "time": "Mon, October 26th at 7:00 PM EDT",
-            "home": "Cleveland Cavaliers",
-            "away": "Minnesota Timberwolves",
-            "home_record": "1-1",
-            "away_record": "3-0",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909870",
-            "time": "Mon, October 26th at 7:30 PM EDT",
+            "id": "401909877",
+            "time": "Tue, October 27th at 7:30 PM EDT",
             "home": "Boston Celtics",
-            "away": "Chicago Bulls",
-            "home_record": "1-1",
-            "away_record": "1-2",
+            "away": "Brooklyn Nets",
+            "home_record": "2-1",
+            "away_record": "0-3",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
@@ -74,107 +26,11 @@
             "players": []
         },
         {
-            "id": "401909871",
-            "time": "Mon, October 26th at 7:30 PM EDT",
-            "home": "Miami Heat",
-            "away": "Dallas Mavericks",
+            "id": "401909878",
+            "time": "Tue, October 27th at 8:00 PM EDT",
+            "home": "New York Knicks",
+            "away": "Detroit Pistons",
             "home_record": "0-3",
-            "away_record": "1-2",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909872",
-            "time": "Mon, October 26th at 8:00 PM EDT",
-            "home": "Milwaukee Bucks",
-            "away": "Indiana Pacers",
-            "home_record": "0-3",
-            "away_record": "2-1",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909873",
-            "time": "Mon, October 26th at 8:00 PM EDT",
-            "home": "Oklahoma City Thunder",
-            "away": "Phoenix Suns",
-            "home_record": "3-0",
-            "away_record": "1-1",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909874",
-            "time": "Mon, October 26th at 8:30 PM EDT",
-            "home": "Houston Rockets",
-            "away": "Atlanta Hawks",
-            "home_record": "3-0",
-            "away_record": "2-1",
-            "home_metrics": {
-                "l5_ppg": 110.0,
-                "l5_opp_ppg": 108.0,
-                "l5_diff": 2.0,
-                "l5_win_rate": "60%"
-            },
-            "away_metrics": {
-                "l5_ppg": 108.0,
-                "l5_opp_ppg": 109.0,
-                "l5_diff": -1.0,
-                "l5_win_rate": "40%"
-            },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "220.5",
-            "model_edge": "Active Edge Scan",
-            "players": []
-        },
-        {
-            "id": "401909875",
-            "time": "Mon, October 26th at 9:00 PM EDT",
-            "home": "Utah Jazz",
-            "away": "Memphis Grizzlies",
-            "home_record": "1-2",
             "away_record": "3-0",
             "home_metrics": {
                 "l5_ppg": 110.0,
@@ -194,12 +50,36 @@
             "players": []
         },
         {
-            "id": "401909876",
-            "time": "Mon, October 26th at 10:00 PM EDT",
-            "home": "Denver Nuggets",
-            "away": "Golden State Warriors",
-            "home_record": "1-1",
+            "id": "401909879",
+            "time": "Tue, October 27th at 8:00 PM EDT",
+            "home": "San Antonio Spurs",
+            "away": "Sacramento Kings",
+            "home_record": "1-2",
             "away_record": "0-3",
+            "home_metrics": {
+                "l5_ppg": 110.0,
+                "l5_opp_ppg": 108.0,
+                "l5_diff": 2.0,
+                "l5_win_rate": "60%"
+            },
+            "away_metrics": {
+                "l5_ppg": 108.0,
+                "l5_opp_ppg": 109.0,
+                "l5_diff": -1.0,
+                "l5_win_rate": "40%"
+            },
+            "consensus_spread": "Spread TBD",
+            "implied_total": "220.5",
+            "model_edge": "Active Edge Scan",
+            "players": []
+        },
+        {
+            "id": "401909880",
+            "time": "Tue, October 27th at 11:00 PM EDT",
+            "home": "Los Angeles Lakers",
+            "away": "Portland Trail Blazers",
+            "home_record": "3-0",
+            "away_record": "2-0",
             "home_metrics": {
                 "l5_ppg": 110.0,
                 "l5_opp_ppg": 108.0,
