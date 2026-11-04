@@ -104,7 +104,7 @@
 
     <!-- DEEP DIVE MODAL -->
     <div id="deep-dive-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
-        <div class="glass-panel max-w-2xl w-full p-6 rounded-2xl space-y-6 relative max-h-[90vh] overflow-y-auto border border-gray-700/60">
+        <div class="glass-panel max-w-3xl w-full p-6 rounded-2xl space-y-6 relative max-h-[90vh] overflow-y-auto border border-gray-700/60">
             <button onclick="closeDeepDive()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg font-bold">&times;</button>
             <div id="modal-content" class="space-y-6">
                 <!-- Populated dynamically -->
@@ -155,9 +155,32 @@
                             consensus_spread: "Celtics -4.5",
                             implied_total: "224.5",
                             model_edge: "+5.2% Edge on Home",
+                            home_starters: [
+                                { position: "PG", name: "J. Holiday", pts: 12.8, def_rating: 107.1 },
+                                { position: "SG", name: "D. White", pts: 15.2, def_rating: 106.4 },
+                                { position: "SF", name: "J. Brown", pts: 23.0, def_rating: 108.2 },
+                                { position: "PF", name: "J. Tatum", pts: 27.2, def_rating: 108.9 },
+                                { position: "C",  name: "K. Porzingis", pts: 19.8, def_rating: 104.5 }
+                            ],
+                            away_starters: [
+                                { position: "PG", name: "T. Rozier", pts: 16.4, def_rating: 112.0 },
+                                { position: "SG", name: "T. Herro", pts: 20.8, def_rating: 114.2 },
+                                { position: "SF", name: "J. Butler", pts: 21.5, def_rating: 108.0 },
+                                { position: "PF", name: "N. Jovic", pts: 8.5, def_rating: 111.0 },
+                                { position: "C",  name: "B. Adebayo", pts: 19.3, def_rating: 105.8 }
+                            ],
+                            h2h: {
+                                last_3_meetings: [
+                                    { date: "2026-03-12", winner: "Boston Celtics", score: "114 - 108" },
+                                    { date: "2026-01-05", winner: "Miami Heat", score: "120 - 115" },
+                                    { date: "2025-11-20", winner: "Boston Celtics", score: "109 - 102" }
+                                ],
+                                home_h2h_wins: 2,
+                                away_h2h_wins: 1
+                            },
                             players: [
-                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" },
-                                { name: "Jimmy Butler", position: "SF", prop: "Points", line: 21.5, l5_avg: 23.0, hit_rate: "60% L5", vs_opponent_home: "20.5 PTS (L3 Home)", vs_opponent_away: "22.5 PTS (L3 Away)" }
+                                { name: "Jayson Tatum", position: "SF", prop: "Points", line: 27.5, l5_avg: 29.2, hit_rate: "80% L5", def_matchup_rating: "A (Favorable vs Wing)", vs_opponent_home: "28.5 PTS (L3 Home)", vs_opponent_away: "26.0 PTS (L3 Away)" },
+                                { name: "Jimmy Butler", position: "SF", prop: "Points", line: 21.5, l5_avg: 23.0, hit_rate: "60% L5", def_matchup_rating: "B (Neutral Matchup)", vs_opponent_home: "20.5 PTS (L3 Home)", vs_opponent_away: "22.5 PTS (L3 Away)" }
                             ]
                         },
                         {
@@ -172,9 +195,32 @@
                             consensus_spread: "Knicks -2.5",
                             implied_total: "218.5",
                             model_edge: "+3.8% Edge on Under",
+                            home_starters: [
+                                { position: "PG", name: "J. Brunson", pts: 28.4, def_rating: 111.0 },
+                                { position: "SG", name: "M. Bridges", pts: 17.5, def_rating: 107.5 },
+                                { position: "SF", name: "O. Anunoby", pts: 15.2, def_rating: 103.8 },
+                                { position: "PF", name: "J. Hart", pts: 9.4, def_rating: 106.2 },
+                                { position: "C",  name: "K. Towns", pts: 22.0, def_rating: 110.5 }
+                            ],
+                            away_starters: [
+                                { position: "PG", name: "T. Maxey", pts: 25.9, def_rating: 113.1 },
+                                { position: "SG", name: "K. Oubre Jr.", pts: 15.4, def_rating: 111.2 },
+                                { position: "SF", name: "C. Martin", pts: 10.1, def_rating: 108.4 },
+                                { position: "PF", name: "P. George", pts: 21.2, def_rating: 107.0 },
+                                { position: "C",  name: "J. Embiid", pts: 32.5, def_rating: 106.9 }
+                            ],
+                            h2h: {
+                                last_3_meetings: [
+                                    { date: "2026-02-28", winner: "New York Knicks", score: "108 - 105" },
+                                    { date: "2026-01-18", winner: "Philadelphia 76ers", score: "112 - 110" },
+                                    { date: "2025-12-04", winner: "New York Knicks", score: "116 - 101" }
+                                ],
+                                home_h2h_wins: 2,
+                                away_h2h_wins: 1
+                            },
                             players: [
-                                { name: "Jalen Brunson", position: "PG", prop: "Points", line: 28.5, l5_avg: 31.0, hit_rate: "80% L5", vs_opponent_home: "29.8 PTS (L3 Home)", vs_opponent_away: "27.5 PTS (L3 Away)" },
-                                { name: "Joel Embiid", position: "C", prop: "Points", line: 32.5, l5_avg: 30.5, hit_rate: "40% L5", vs_opponent_home: "34.0 PTS (L3 Home)", vs_opponent_away: "31.2 PTS (L3 Away)" }
+                                { name: "Jalen Brunson", position: "PG", prop: "Points", line: 28.5, l5_avg: 31.0, hit_rate: "80% L5", def_matchup_rating: "B+ (Top 20% vs Guard)", vs_opponent_home: "29.8 PTS (L3 Home)", vs_opponent_away: "27.5 PTS (L3 Away)" },
+                                { name: "Joel Embiid", position: "C", prop: "Points", line: 32.5, l5_avg: 30.5, hit_rate: "40% L5", def_matchup_rating: "A- (Elite Paint Matchup)", vs_opponent_home: "34.0 PTS (L3 Home)", vs_opponent_away: "31.2 PTS (L3 Away)" }
                             ]
                         }
                     ]
@@ -231,34 +277,46 @@
                     <p class="text-xs text-gray-400">Consensus Spread: ${match.consensus_spread} | Implied Total: ${match.implied_total}</p>
                 </div>
 
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-1">
-                        <div class="text-xs text-gray-400 font-medium">${match.away} (L5)</div>
-                        <div class="text-xs font-mono text-white">PPG: ${match.away_metrics.l5_ppg}</div>
-                        <div class="text-xs font-mono text-gray-400">Opp PPG: ${match.away_metrics.l5_opp_ppg}</div>
-                        <div class="text-xs font-mono text-neonext">Win Rate: ${match.away_metrics.l5_win_rate}</div>
-                    </div>
-                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-1">
-                        <div class="text-xs text-gray-400 font-medium">${match.home} (L5)</div>
-                        <div class="text-xs font-mono text-white">PPG: ${match.home_metrics.l5_ppg}</div>
-                        <div class="text-xs font-mono text-gray-400">Opp PPG: ${match.home_metrics.l5_opp_ppg}</div>
-                        <div class="text-xs font-mono text-neonext">Win Rate: ${match.home_metrics.l5_win_rate}</div>
+                <!-- Deep Dive Tabs Navigation -->
+                <div class="flex space-x-1.5 border-b border-gray-800 pb-3 text-xs font-medium">
+                    <button onclick="switchModalTab(event, 'modal-tab-rotations')" id="btn-modal-rotations" class="px-3 py-1.5 rounded-lg bg-accent text-white transition">Starting Rotations</button>
+                    <button onclick="switchModalTab(event, 'modal-tab-defense')" id="btn-modal-defense" class="px-3 py-1.5 rounded-lg text-gray-400 hover:text-white transition">Defensive Stats & Props</button>
+                    <button onclick="switchModalTab(event, 'modal-tab-h2h')" id="btn-modal-h2h" class="px-3 py-1.5 rounded-lg text-gray-400 hover:text-white transition">Head-to-Head H2H</button>
+                </div>
+
+                <!-- Tab 1: Starting Rotations Side-by-Side -->
+                <div id="modal-tab-rotations" class="modal-tab-content space-y-3">
+                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Side-by-Side Starting Lineups</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2">
+                            <div class="text-xs font-bold text-accent">${match.away} (Starters)</div>
+                            <ul class="space-y-1.5 text-xs font-mono text-gray-300">
+                                ${(match.away_starters || []).map(p => `<li class="flex justify-between border-b border-gray-800/50 pb-1"><span><strong class="text-white">${p.position}:</strong> ${p.name}</span><span>${p.pts} PTS | DefRtg: ${p.def_rating}</span></li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2">
+                            <div class="text-xs font-bold text-accent">${match.home} (Starters)</div>
+                            <ul class="space-y-1.5 text-xs font-mono text-gray-300">
+                                ${(match.home_starters || []).map(p => `<li class="flex justify-between border-b border-gray-800/50 pb-1"><span><strong class="text-white">${p.position}:</strong> ${p.name}</span><span>${p.pts} PTS | DefRtg: ${p.def_rating}</span></li>`).join('')}
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="space-y-3 pt-2">
-                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Key Player Props & Historical Splits</h3>
+                <!-- Tab 2: Defensive Stats & Player Props -->
+                <div id="modal-tab-defense" class="modal-tab-content hidden space-y-3">
+                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Defensive Ratings & Player Prop Matchups</h3>
                     <div class="space-y-2">
                         ${match.players.map(p => `
                             <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2.5">
                                 <div class="flex justify-between items-center">
                                     <span class="font-semibold text-white text-xs">${p.name} <span class="text-gray-500">(${p.position})</span></span>
-                                    <span class="text-xs font-mono bg-accent/15 text-blue-400 px-2 py-0.5 rounded">${p.prop} Line:${p.line}</span>
+                                    <span class="text-xs font-mono bg-accent/15 text-blue-400 px-2 py-0.5 rounded">${p.prop} Line: ${p.line}</span>
                                 </div>
-                                <div class="grid grid-cols-3 gap-2 text-xs font-mono text-gray-300 pt-2 border-t border-gray-800/60">
+                                <div class="grid grid-cols-3 gap-2 text-xs font-mono text-gray-300 pt-1">
                                     <div>L5 Avg: <strong class="text-white">${p.l5_avg}</strong></div>
                                     <div>Hit Rate: <strong class="text-neonext">${p.hit_rate}</strong></div>
-                                    <div>Matchup: <strong class="text-accent">Favorable</strong></div>
+                                    <div>Def Matchup: <strong class="text-accent">${p.def_matchup_rating || 'Favorable'}</strong></div>
                                 </div>
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono bg-cardbg p-2.5 rounded-lg text-gray-400 border border-gray-800/40">
                                     <div>🏠 Home vs Team: <span class="text-white">${p.vs_opponent_home}</span></div>
@@ -268,10 +326,41 @@
                         `).join('')}
                     </div>
                 </div>
+
+                <!-- Tab 3: Historical Head-to-Head -->
+                <div id="modal-tab-h2h" class="modal-tab-content hidden space-y-3">
+                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Historical Series & Recent H2H Meetings</h3>
+                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 space-y-3">
+                        <div class="flex justify-between items-center text-xs font-mono text-gray-300 border-b border-gray-800 pb-2">
+                            <span>Series Advantage: <strong class="text-white">${match.home} (${match.h2h?.home_h2h_wins || 2}) - ${match.away} (${match.h2h?.away_h2h_wins || 1})</strong></span>
+                            <span class="text-accent">Last 3 Games</span>
+                        </div>
+                        <ul class="space-y-2 text-xs font-mono text-gray-300">
+                            ${(match.h2h?.last_3_meetings || []).map(m => `
+                                <li class="flex justify-between items-center bg-cardbg p-2.5 rounded-lg border border-gray-800/40">
+                                    <span class="text-gray-400">${m.date}</span>
+                                    <span class="text-white font-bold">${m.winner}</span>
+                                    <span class="text-neonext">${m.score}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                </div>
             `;
 
             document.getElementById('deep-dive-modal').classList.remove('hidden');
             document.getElementById('deep-dive-modal').classList.add('flex');
+        }
+
+        function switchModalTab(event, tabId) {
+            ['modal-tab-rotations', 'modal-tab-defense', 'modal-tab-h2h'].forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+            ['btn-modal-rotations', 'btn-modal-defense', 'btn-modal-h2h'].forEach(id => {
+                document.getElementById(id).className = "px-3 py-1.5 rounded-lg text-gray-400 hover:text-white transition";
+            });
+            document.getElementById(tabId).classList.remove('hidden');
+            event.currentTarget.className = "px-3 py-1.5 rounded-lg bg-accent text-white transition";
         }
 
         function closeDeepDive() {
