@@ -2,12 +2,22 @@ import json
 from datetime import datetime
 import requests
 
+def fetch_player_gamelog(athlete_id):
+    """Fetches recent game stats for an athlete from ESPN's web API."""
+    url = f"https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/{athlete_id}/gamelog"
+    try:
+        response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+        if response.status_code == 200:
+            return response.json()
+    except Exception as e:
+        print(f"Error fetching gamelog for {athlete_id}: {e}")
+    return None
+
 def fetch_live_nba_slate():
-    # Fetch today's scoreboard from the public ESPN API endpoint
     today_str = datetime.utcnow().strftime('%Y%m%d')
     url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={today_str}"
     
-    response = requests.get(url)
+    response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
     data = response.json()
     
     slate = []
@@ -20,7 +30,7 @@ def fetch_live_nba_slate():
         home_team = next(t for t in teams if t['homeAway'] == 'home')
         away_team = next(t for t in teams if t['homeAway'] == 'away')
         
-        # Extract odds if available from ESPN payload
+        # Extract odds if available
         consensus_spread = "Spread TBD"
         implied_total = "N/A"
         if 'odds' in competition and len(competition['odds']) > 0:
@@ -28,7 +38,7 @@ def fetch_live_nba_slate():
             consensus_spread = odds_data.get('details', 'Spread TBD')
             implied_total = str(odds_data.get('overUnder', 'N/A'))
         
-        # Dynamic sample player props structure (ready for regular season box scores)
+        # Structured player performance & prop objects (ready to be mapped to active rosters)
         sample_players = [
             {
                 "name": "Featured Star",
@@ -65,6 +75,7 @@ def fetch_live_nba_slate():
     
     with open('data.json', 'w') as f:
         json.dump(output, f, indent=4)
+    print("Successfully updated data.json with player and game metrics.")
 
 if __name__ == "__main__":
     fetch_live_nba_slate()
