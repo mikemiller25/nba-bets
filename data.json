@@ -1,13 +1,13 @@
 {
-    "last_updated": "2026-11-05 10:58:40 UTC",
+    "last_updated": "2026-11-06 10:58:11 UTC",
     "slate": [
         {
-            "id": "401909936",
-            "time": "Thu, November 5th at 9:00 PM EST",
-            "home": "Phoenix Suns",
-            "away": "Orlando Magic",
-            "home_record": "1-5",
-            "away_record": "2-5",
+            "id": "401909287",
+            "time": "Fri, November 6th at 7:00 PM EST",
+            "home": "Atlanta Hawks",
+            "away": "Washington Wizards",
+            "home_record": "5-4",
+            "away_record": "4-4",
             "home_metrics": {
                 "l5_ppg": 112.0,
                 "l5_opp_ppg": 106.5,
@@ -20,8 +20,8 @@
                 "l5_diff": -0.9,
                 "l5_win_rate": "45%"
             },
-            "consensus_spread": "PHX -1.5",
-            "implied_total": "223.5",
+            "consensus_spread": "ATL -6.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -91,17 +91,17 @@
                 "last_3_meetings": [
                     {
                         "date": "2026-03-12",
-                        "winner": "Phoenix Suns",
+                        "winner": "Atlanta Hawks",
                         "score": "114 - 108"
                     },
                     {
                         "date": "2026-01-05",
-                        "winner": "Orlando Magic",
+                        "winner": "Washington Wizards",
                         "score": "120 - 115"
                     },
                     {
                         "date": "2025-11-20",
-                        "winner": "Phoenix Suns",
+                        "winner": "Atlanta Hawks",
                         "score": "109 - 102"
                     }
                 ],
@@ -123,12 +123,12 @@
             ]
         },
         {
-            "id": "401909937",
-            "time": "Thu, November 5th at 10:00 PM EST",
-            "home": "Golden State Warriors",
-            "away": "Miami Heat",
-            "home_record": "5-3",
-            "away_record": "3-5",
+            "id": "401909288",
+            "time": "Fri, November 6th at 7:00 PM EST",
+            "home": "Charlotte Hornets",
+            "away": "Boston Celtics",
+            "home_record": "3-6",
+            "away_record": "6-2",
             "home_metrics": {
                 "l5_ppg": 112.0,
                 "l5_opp_ppg": 106.5,
@@ -141,8 +141,8 @@
                 "l5_diff": -0.9,
                 "l5_win_rate": "45%"
             },
-            "consensus_spread": "GS -7.5",
-            "implied_total": "235.5",
+            "consensus_spread": "BOS -8.5",
+            "implied_total": "209.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -212,17 +212,864 @@
                 "last_3_meetings": [
                     {
                         "date": "2026-03-12",
-                        "winner": "Golden State Warriors",
+                        "winner": "Charlotte Hornets",
                         "score": "114 - 108"
                     },
                     {
                         "date": "2026-01-05",
-                        "winner": "Miami Heat",
+                        "winner": "Boston Celtics",
                         "score": "120 - 115"
                     },
                     {
                         "date": "2025-11-20",
-                        "winner": "Golden State Warriors",
+                        "winner": "Charlotte Hornets",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909289",
+            "time": "Fri, November 6th at 7:30 PM EST",
+            "home": "Cleveland Cavaliers",
+            "away": "Philadelphia 76ers",
+            "home_record": "4-4",
+            "away_record": "8-1",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "PHI -2.5",
+            "implied_total": "228.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "Cleveland Cavaliers",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "Philadelphia 76ers",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "Cleveland Cavaliers",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909290",
+            "time": "Fri, November 6th at 8:00 PM EST",
+            "home": "Dallas Mavericks",
+            "away": "Utah Jazz",
+            "home_record": "4-4",
+            "away_record": "1-7",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "DAL -7.5",
+            "implied_total": "225.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "Dallas Mavericks",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "Utah Jazz",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "Dallas Mavericks",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909291",
+            "time": "Fri, November 6th at 8:00 PM EST",
+            "home": "Memphis Grizzlies",
+            "away": "Oklahoma City Thunder",
+            "home_record": "6-2",
+            "away_record": "6-2",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "OKC -3.5",
+            "implied_total": "225.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "Memphis Grizzlies",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "Oklahoma City Thunder",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "Memphis Grizzlies",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909292",
+            "time": "Fri, November 6th at 8:00 PM EST",
+            "home": "Milwaukee Bucks",
+            "away": "Toronto Raptors",
+            "home_record": "1-7",
+            "away_record": "4-4",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "TOR -6.5",
+            "implied_total": "230.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "Milwaukee Bucks",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "Toronto Raptors",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "Milwaukee Bucks",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909293",
+            "time": "Fri, November 6th at 8:00 PM EST",
+            "home": "New Orleans Pelicans",
+            "away": "Minnesota Timberwolves",
+            "home_record": "4-4",
+            "away_record": "6-3",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "MIN -4.5",
+            "implied_total": "230.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "New Orleans Pelicans",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "Minnesota Timberwolves",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "New Orleans Pelicans",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909294",
+            "time": "Fri, November 6th at 10:00 PM EST",
+            "home": "Los Angeles Lakers",
+            "away": "Portland Trail Blazers",
+            "home_record": "7-2",
+            "away_record": "6-1",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "LAL -2.5",
+            "implied_total": "232.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "Los Angeles Lakers",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "Portland Trail Blazers",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "Los Angeles Lakers",
+                        "score": "109 - 102"
+                    }
+                ],
+                "home_h2h_wins": 2,
+                "away_h2h_wins": 1
+            },
+            "players": [
+                {
+                    "name": "Featured Star",
+                    "position": "G-F",
+                    "prop": "Points",
+                    "line": 24.5,
+                    "l5_avg": 26.8,
+                    "hit_rate": "80% L5",
+                    "def_matchup_rating": "B+ (Top 15% vs Position)",
+                    "vs_opponent_home": "27.2 PTS (L3 Home)",
+                    "vs_opponent_away": "25.0 PTS (L3 Away)"
+                }
+            ]
+        },
+        {
+            "id": "401909295",
+            "time": "Fri, November 6th at 10:00 PM EST",
+            "home": "Sacramento Kings",
+            "away": "San Antonio Spurs",
+            "home_record": "1-7",
+            "away_record": "6-2",
+            "home_metrics": {
+                "l5_ppg": 112.0,
+                "l5_opp_ppg": 106.5,
+                "l5_diff": 5.5,
+                "l5_win_rate": "75%"
+            },
+            "away_metrics": {
+                "l5_ppg": 109.2,
+                "l5_opp_ppg": 110.1,
+                "l5_diff": -0.9,
+                "l5_win_rate": "45%"
+            },
+            "consensus_spread": "SA -15.5",
+            "implied_total": "229.5",
+            "model_edge": "Active Edge Scan",
+            "home_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard 1",
+                    "pts": 18.5,
+                    "def_rating": 110.2
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard 2",
+                    "pts": 15.2,
+                    "def_rating": 112.4
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward 1",
+                    "pts": 21.0,
+                    "def_rating": 108.9
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward 2",
+                    "pts": 14.8,
+                    "def_rating": 109.1
+                },
+                {
+                    "position": "C",
+                    "name": "Center 1",
+                    "pts": 16.4,
+                    "def_rating": 105.0
+                }
+            ],
+            "away_starters": [
+                {
+                    "position": "PG",
+                    "name": "Guard A",
+                    "pts": 22.1,
+                    "def_rating": 113.0
+                },
+                {
+                    "position": "SG",
+                    "name": "Guard B",
+                    "pts": 14.0,
+                    "def_rating": 111.5
+                },
+                {
+                    "position": "SF",
+                    "name": "Forward A",
+                    "pts": 19.4,
+                    "def_rating": 109.8
+                },
+                {
+                    "position": "PF",
+                    "name": "Forward B",
+                    "pts": 12.6,
+                    "def_rating": 114.2
+                },
+                {
+                    "position": "C",
+                    "name": "Center A",
+                    "pts": 15.0,
+                    "def_rating": 107.6
+                }
+            ],
+            "h2h": {
+                "last_3_meetings": [
+                    {
+                        "date": "2026-03-12",
+                        "winner": "Sacramento Kings",
+                        "score": "114 - 108"
+                    },
+                    {
+                        "date": "2026-01-05",
+                        "winner": "San Antonio Spurs",
+                        "score": "120 - 115"
+                    },
+                    {
+                        "date": "2025-11-20",
+                        "winner": "Sacramento Kings",
                         "score": "109 - 102"
                     }
                 ],
