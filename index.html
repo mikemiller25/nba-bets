@@ -284,20 +284,30 @@
                     <button onclick="switchModalTab(event, 'modal-tab-h2h')" id="btn-modal-h2h" class="px-3 py-1.5 rounded-lg text-gray-400 hover:text-white transition">Head-to-Head H2H</button>
                 </div>
 
-                <!-- Tab 1: Starting Rotations Side-by-Side -->
+               <!-- Tab 1: Starting Rotations Side-by-Side -->
                 <div id="modal-tab-rotations" class="modal-tab-content space-y-3">
                     <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Side-by-Side Starting Lineups</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2">
                             <div class="text-xs font-bold text-accent">${match.away} (Starters)</div>
                             <ul class="space-y-1.5 text-xs font-mono text-gray-300">
-                                ${(match.away_starters || []).map(p => `<li class="flex justify-between border-b border-gray-800/50 pb-1"><span><strong class="text-white">${p.position}:</strong> ${p.name}</span><span>${p.pts} PTS | DefRtg: ${p.def_rating}</span></li>`).join('')}
+                                ${(match.away_starters || []).map(p => `
+                                    <li class="flex justify-between border-b border-gray-800/50 pb-1">
+                                        <span><strong class="text-white">${p.position}:</strong> ${p.name || 'Player TBD'}</span>
+                                        <span>${p.pts} PTS | DefRtg: ${p.def_rating}</span>
+                                    </li>
+                                `).join('')}
                             </ul>
                         </div>
                         <div class="bg-darkbg p-3.5 rounded-xl border border-gray-800 space-y-2">
                             <div class="text-xs font-bold text-accent">${match.home} (Starters)</div>
                             <ul class="space-y-1.5 text-xs font-mono text-gray-300">
-                                ${(match.home_starters || []).map(p => `<li class="flex justify-between border-b border-gray-800/50 pb-1"><span><strong class="text-white">${p.position}:</strong> ${p.name}</span><span>${p.pts} PTS | DefRtg: ${p.def_rating}</span></li>`).join('')}
+                                ${(match.home_starters || []).map(p => `
+                                    <li class="flex justify-between border-b border-gray-800/50 pb-1">
+                                        <span><strong class="text-white">${p.position}:</strong> ${p.name || 'Player TBD'}</span>
+                                        <span>${p.pts} PTS | DefRtg: ${p.def_rating}</span>
+                                    </li>
+                                `).join('')}
                             </ul>
                         </div>
                     </div>
