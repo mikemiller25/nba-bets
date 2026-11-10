@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-10 21:36:03 UTC",
+    "last_updated": "2026-11-10 22:36:45 UTC",
     "slate": [
         {
             "id": "401909960",
@@ -21,7 +21,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "NY -15.5",
-            "implied_total": "222.5",
+            "implied_total": "221.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
