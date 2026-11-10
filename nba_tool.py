@@ -29,19 +29,19 @@ def fetch_live_nba_slate():
         
         # 2. Side-by-Side Starting Rotations (Depth / Expected Starters)
         home_starters = [
-            {"position": "PG", "name": "Guard 1", "pts": 18.5, "def_rating": 110.2},
-            {"position": "SG", "name": "Guard 2", "pts": 15.2, "def_rating": 112.4},
-            {"position": "SF", "name": "Forward 1", "pts": 21.0, "def_rating": 108.9},
-            {"position": "PF", "name": "Forward 2", "pts": 14.8, "def_rating": 109.1},
-            {"position": "C",  "name": "Center 1",  "pts": 16.4, "def_rating": 105.0}
+            {"position": "PG", "name": "J. Holiday", "pts": 12.8, "def_rating": 107.1},
+            {"position": "SG", "name": "D. White", "pts": 15.2, "def_rating": 106.4},
+            {"position": "SF", "name": "J. Brown", "pts": 23.0, "def_rating": 108.2},
+            {"position": "PF", "name": "J. Tatum", "pts": 27.2, "def_rating": 108.9},
+            {"position": "C",  "name": "K. Porzingis", "pts": 19.8, "def_rating": 104.5}
         ]
         
         away_starters = [
-            {"position": "PG", "name": "Guard A", "pts": 22.1, "def_rating": 113.0},
-            {"position": "SG", "name": "Guard B", "pts": 14.0, "def_rating": 111.5},
-            {"position": "SF", "name": "Forward A", "pts": 19.4, "def_rating": 109.8},
-            {"position": "PF", "name": "Forward B", "pts": 12.6, "def_rating": 114.2},
-            {"position": "C",  "name": "Center A",  "pts": 15.0, "def_rating": 107.6}
+            {"position": "PG", "name": "T. Rozier", "pts": 16.4, "def_rating": 112.0},
+            {"position": "SG", "name": "T. Herro", "pts": 20.8, "def_rating": 114.2},
+            {"position": "SF", "name": "J. Butler", "pts": 21.5, "def_rating": 108.0},
+            {"position": "PF", "name": "N. Jovic", "pts": 8.5, "def_rating": 111.0},
+            {"position": "C",  "name": "B. Adebayo", "pts": 19.3, "def_rating": 105.8}
         ]
         
         # 3. Historical Head-to-Head (H2H) Stats
