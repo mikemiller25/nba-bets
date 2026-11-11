@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-11 16:49:47 UTC",
+    "last_updated": "2026-11-11 17:52:07 UTC",
     "slate": [
         {
             "id": "401909966",
@@ -21,7 +21,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "IND -2.5",
-            "implied_total": "227.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -263,7 +263,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "BOS -5.5",
-            "implied_total": "216.5",
+            "implied_total": "215.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -867,7 +867,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "ORL -3.5",
+            "consensus_spread": "ORL -2.5",
             "implied_total": "214.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
