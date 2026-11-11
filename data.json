@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-11 04:52:55 UTC",
+    "last_updated": "2026-11-11 05:53:18 UTC",
     "slate": [
         {
             "id": "401909966",
@@ -262,8 +262,8 @@
                 "l5_diff": 13.2,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "BOS -6.5",
-            "implied_total": "216.5",
+            "consensus_spread": "BOS -7.5",
+            "implied_total": "215.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -625,8 +625,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "LAL -10.5",
-            "implied_total": "233.5",
+            "consensus_spread": "LAL -11.5",
+            "implied_total": "232.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -854,7 +854,7 @@
             "home": "Utah Jazz",
             "away": "Orlando Magic",
             "home_record": "1-10",
-            "away_record": "2-7",
+            "away_record": "3-7",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -988,8 +988,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "HOU -5.5",
-            "implied_total": "222.5",
+            "consensus_spread": "HOU -6.5",
+            "implied_total": "221.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
