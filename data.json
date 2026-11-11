@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-11 09:53:05 UTC",
+    "last_updated": "2026-11-11 10:54:07 UTC",
     "slate": [
         {
             "id": "401909966",
@@ -263,7 +263,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "BOS -7.5",
-            "implied_total": "215.5",
+            "implied_total": "216.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -505,7 +505,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "DEN -3.5",
-            "implied_total": "228.5",
+            "implied_total": "229.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
