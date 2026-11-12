@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-12 00:58:54 UTC",
+    "last_updated": "2026-11-12 02:13:08 UTC",
     "slate": [
         {
             "id": "401909976",
@@ -262,7 +262,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "MIN -4.5",
+            "consensus_spread": "MIN -5.5",
             "implied_total": "226.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -383,8 +383,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "PHX -7.5",
+            "implied_total": "213.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
