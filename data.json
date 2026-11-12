@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-12 12:59:03 UTC",
+    "last_updated": "2026-11-12 14:19:36 UTC",
     "slate": [
         {
             "id": "401909976",
@@ -20,7 +20,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "PHI -10.5",
+            "consensus_spread": "PHI -9.5",
             "implied_total": "221.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
