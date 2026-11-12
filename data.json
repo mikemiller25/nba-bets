@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-12 02:13:08 UTC",
+    "last_updated": "2026-11-12 03:48:32 UTC",
     "slate": [
         {
             "id": "401909976",
@@ -7,7 +7,7 @@
             "home": "Philadelphia 76ers",
             "away": "Toronto Raptors",
             "home_record": "9-3",
-            "away_record": "5-5",
+            "away_record": "5-6",
             "home_metrics": {
                 "l5_ppg": 115.2,
                 "l5_opp_ppg": 111.4,
@@ -127,7 +127,7 @@
             "time": "Thu, November 12th at 7:00 PM EST",
             "home": "Washington Wizards",
             "away": "Detroit Pistons",
-            "home_record": "4-7",
+            "home_record": "4-8",
             "away_record": "7-3",
             "home_metrics": {
                 "l5_ppg": 108.5,
@@ -141,8 +141,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "DET -9.5",
+            "implied_total": "220.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
