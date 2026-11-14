@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-14 05:39:33 UTC",
+    "last_updated": "2026-11-14 13:13:12 UTC",
     "slate": [
         {
             "id": "401909980",
@@ -20,8 +20,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "DEN -10.5",
-            "implied_total": "234.5",
+            "consensus_spread": "DEN -11.5",
+            "implied_total": "235.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -141,7 +141,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "CLE -3.5",
+            "consensus_spread": "CLE -1.5",
             "implied_total": "231.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -262,8 +262,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "DET -5.5",
-            "implied_total": "226.5",
+            "consensus_spread": "DET -4.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -383,8 +383,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "MEM -5.5",
-            "implied_total": "225.5",
+            "consensus_spread": "MEM -4.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -504,8 +504,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "MIN -14.5",
+            "implied_total": "234.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
