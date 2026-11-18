@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-18 03:26:47 UTC",
+    "last_updated": "2026-11-18 12:48:18 UTC",
     "slate": [
         {
             "id": "401910007",
@@ -20,7 +20,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "CLE -5.5",
+            "consensus_spread": "CLE -4.5",
             "implied_total": "234.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -141,8 +141,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "HOU -6.5",
-            "implied_total": "225.5",
+            "consensus_spread": "HOU -7.5",
+            "implied_total": "224.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -263,7 +263,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "MIA -12.5",
-            "implied_total": "236.5",
+            "implied_total": "235.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -383,8 +383,8 @@
                 "l5_diff": 3.8,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "PHI -1.5",
-            "implied_total": "222.5",
+            "consensus_spread": "PHI -2.5",
+            "implied_total": "221.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -505,7 +505,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "BKN -2.5",
-            "implied_total": "237.5",
+            "implied_total": "238.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -625,8 +625,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "TOR -6.5",
+            "implied_total": "227.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -733,7 +733,7 @@
             "home": "New Orleans Pelicans",
             "away": "Detroit Pistons",
             "home_record": "5-10",
-            "away_record": "8-4",
+            "away_record": "9-4",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -746,8 +746,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "DET -7.5",
+            "implied_total": "229.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -868,7 +868,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "OKC -6.5",
-            "implied_total": "228.5",
+            "implied_total": "227.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -1110,7 +1110,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "BOS -2.5",
-            "implied_total": "221.5",
+            "implied_total": "222.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -1216,8 +1216,8 @@
             "time": "Wed, November 18th at 10:00 PM EST",
             "home": "Los Angeles Lakers",
             "away": "Utah Jazz",
-            "home_record": "12-2",
-            "away_record": "1-13",
+            "home_record": "13-2",
+            "away_record": "2-13",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -1230,8 +1230,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "LAL -10.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -1352,7 +1352,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "PHX -6.5",
-            "implied_total": "228.5",
+            "implied_total": "227.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
