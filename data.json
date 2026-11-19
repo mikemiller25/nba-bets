@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-19 02:59:42 UTC",
+    "last_updated": "2026-11-19 11:28:15 UTC",
     "slate": [
         {
             "id": "401910019",
@@ -7,7 +7,7 @@
             "home": "Memphis Grizzlies",
             "away": "Golden State Warriors",
             "home_record": "11-4",
-            "away_record": "8-6",
+            "away_record": "8-7",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -20,8 +20,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "MEM -7.5",
+            "implied_total": "226.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -141,8 +141,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "POR -10.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -262,8 +262,8 @@
                 "l5_diff": 9.3,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "NY -1.5",
+            "implied_total": "217.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -383,8 +383,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "SA -16.5",
-            "implied_total": "225.5",
+            "consensus_spread": "SA -15.5",
+            "implied_total": "226.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
