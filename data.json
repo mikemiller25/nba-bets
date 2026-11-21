@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-21 01:12:26 UTC",
+    "last_updated": "2026-11-21 09:25:02 UTC",
     "slate": [
         {
             "id": "401910023",
@@ -21,7 +21,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "PHI -11.5",
-            "implied_total": "228.5",
+            "implied_total": "229.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -142,7 +142,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "NY -5.5",
-            "implied_total": "218.5",
+            "implied_total": "217.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -263,7 +263,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "DAL -5.5",
-            "implied_total": "229.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -384,7 +384,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "MIN -5.5",
-            "implied_total": "227.5",
+            "implied_total": "226.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -491,7 +491,7 @@
             "home": "San Antonio Spurs",
             "away": "New Orleans Pelicans",
             "home_record": "13-3",
-            "away_record": "5-11",
+            "away_record": "5-12",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -504,8 +504,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "SA -17.5",
+            "implied_total": "227.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -611,7 +611,7 @@
             "time": "Sat, November 21st at 10:00 PM EST",
             "home": "Sacramento Kings",
             "away": "Boston Celtics",
-            "home_record": "1-13",
+            "home_record": "1-14",
             "away_record": "11-4",
             "home_metrics": {
                 "l5_ppg": 108.5,
@@ -625,8 +625,8 @@
                 "l5_diff": 13.2,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "BOS -12.5",
+            "implied_total": "217.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
