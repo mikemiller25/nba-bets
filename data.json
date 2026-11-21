@@ -1,13 +1,13 @@
 {
-    "last_updated": "2026-11-21 17:13:25 UTC",
+    "last_updated": "2026-11-21 22:55:00 UTC",
     "slate": [
         {
             "id": "401910023",
-            "time": "Sat, November 21st at 1:00 PM EST",
+            "time": "Final",
             "home": "Philadelphia 76ers",
             "away": "Milwaukee Bucks",
-            "home_record": "13-3",
-            "away_record": "1-15",
+            "home_record": "14-3",
+            "away_record": "1-16",
             "home_metrics": {
                 "l5_ppg": 115.2,
                 "l5_opp_ppg": 111.4,
@@ -20,8 +20,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "PHI -10.5",
-            "implied_total": "228.5",
+            "consensus_spread": "Spread TBD",
+            "implied_total": "N/A",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -141,8 +141,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "NY -3.5",
-            "implied_total": "215.5",
+            "consensus_spread": "POR -1.5",
+            "implied_total": "213.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -262,7 +262,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "DAL -5.5",
+            "consensus_spread": "DAL -4.5",
             "implied_total": "230.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -383,7 +383,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "MIN -6.5",
+            "consensus_spread": "MIN -5.5",
             "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -505,7 +505,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "SA -18.5",
-            "implied_total": "229.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -625,8 +625,8 @@
                 "l5_diff": 13.2,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "BOS -13.5",
-            "implied_total": "217.5",
+            "consensus_spread": "BOS -11.5",
+            "implied_total": "215.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
