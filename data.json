@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-22 02:55:03 UTC",
+    "last_updated": "2026-11-22 10:54:57 UTC",
     "slate": [
         {
             "id": "401910029",
@@ -141,7 +141,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "MIA -2.5",
+            "consensus_spread": "MIA -3.5",
             "implied_total": "231.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -491,7 +491,7 @@
             "home": "Utah Jazz",
             "away": "Dallas Mavericks",
             "home_record": "3-14",
-            "away_record": "8-7",
+            "away_record": "9-7",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -504,8 +504,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "DAL -1.5",
+            "implied_total": "225.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -611,7 +611,7 @@
             "time": "Sun, November 22nd at 8:00 PM EST",
             "home": "New York Knicks",
             "away": "Indiana Pacers",
-            "home_record": "9-6",
+            "home_record": "10-6",
             "away_record": "5-11",
             "home_metrics": {
                 "l5_ppg": 112.8,
@@ -625,8 +625,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "NY -9.5",
+            "implied_total": "216.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -733,7 +733,7 @@
             "home": "Golden State Warriors",
             "away": "Boston Celtics",
             "home_record": "8-8",
-            "away_record": "11-4",
+            "away_record": "11-5",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -746,8 +746,8 @@
                 "l5_diff": 13.2,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "BOS -9.5",
+            "implied_total": "210.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
