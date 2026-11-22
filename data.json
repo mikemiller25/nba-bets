@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-22 10:54:57 UTC",
+    "last_updated": "2026-11-22 18:21:14 UTC",
     "slate": [
         {
             "id": "401910029",
@@ -20,8 +20,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "DET -2.5",
-            "implied_total": "225.5",
+            "consensus_spread": "DET -1.5",
+            "implied_total": "223.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -141,7 +141,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "MIA -3.5",
+            "consensus_spread": "MIA -4.5",
             "implied_total": "231.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -262,8 +262,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "ORL -5.5",
-            "implied_total": "222.5",
+            "consensus_spread": "ORL -4.5",
+            "implied_total": "220.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -383,8 +383,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "DEN -8.5",
-            "implied_total": "237.5",
+            "consensus_spread": "DEN -9.5",
+            "implied_total": "235.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -504,8 +504,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "DAL -1.5",
-            "implied_total": "225.5",
+            "consensus_spread": "UTAH -1.5",
+            "implied_total": "224.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -625,8 +625,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "NY -9.5",
-            "implied_total": "216.5",
+            "consensus_spread": "NY -7.5",
+            "implied_total": "213.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -746,7 +746,7 @@
                 "l5_diff": 13.2,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "BOS -9.5",
+            "consensus_spread": "BOS -8.5",
             "implied_total": "210.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
