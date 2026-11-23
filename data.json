@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-23 00:05:03 UTC",
+    "last_updated": "2026-11-23 08:44:13 UTC",
     "slate": [
         {
             "id": "401910036",
@@ -20,8 +20,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "MEM -3.5",
+            "implied_total": "216.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -141,8 +141,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "PHI -2.5",
-            "implied_total": "228.5",
+            "consensus_spread": "PHI -4.5",
+            "implied_total": "230.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -248,8 +248,8 @@
             "time": "Mon, November 23rd at 7:30 PM EST",
             "home": "Indiana Pacers",
             "away": "Oklahoma City Thunder",
-            "home_record": "5-11",
-            "away_record": "10-6",
+            "home_record": "5-12",
+            "away_record": "10-7",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -262,8 +262,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "OKC -4.5",
+            "implied_total": "222.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -383,8 +383,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "TOR -10.5",
+            "implied_total": "224.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -504,8 +504,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "MIN -11.5",
+            "implied_total": "223.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -611,7 +611,7 @@
             "time": "Mon, November 23rd at 8:00 PM EST",
             "home": "Chicago Bulls",
             "away": "Cleveland Cavaliers",
-            "home_record": "4-11",
+            "home_record": "4-12",
             "away_record": "9-8",
             "home_metrics": {
                 "l5_ppg": 108.5,
@@ -625,8 +625,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "CLE -8.5",
+            "implied_total": "240.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -746,8 +746,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "PHX -3.5",
+            "implied_total": "233.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -867,7 +867,7 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "HOU -13.5",
+            "consensus_spread": "HOU -12.5",
             "implied_total": "225.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
@@ -975,7 +975,7 @@
             "home": "Los Angeles Lakers",
             "away": "Utah Jazz",
             "home_record": "14-3",
-            "away_record": "3-14",
+            "away_record": "3-15",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -988,8 +988,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "LAL -13.5",
+            "implied_total": "227.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -1109,8 +1109,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "SA -10.5",
+            "implied_total": "224.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
