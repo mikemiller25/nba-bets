@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-25 02:02:27 UTC",
+    "last_updated": "2026-11-25 12:21:01 UTC",
     "slate": [
         {
             "id": "401909317",
@@ -21,7 +21,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "PHI -1.5",
-            "implied_total": "238.5",
+            "implied_total": "236.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -141,8 +141,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "CHA -3.5",
+            "implied_total": "221.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -263,7 +263,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "NY -3.5",
-            "implied_total": "220.5",
+            "implied_total": "218.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -384,7 +384,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "OKC -1.5",
-            "implied_total": "224.5",
+            "implied_total": "223.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -504,8 +504,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "MEM -6.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -625,8 +625,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "MIL -1.5",
+            "implied_total": "233.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -746,8 +746,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "HOU -8.5",
-            "implied_total": "224.5",
+            "consensus_spread": "HOU -9.5",
+            "implied_total": "222.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -867,8 +867,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "GS -5.5",
+            "implied_total": "217.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -988,8 +988,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "SA -2.5",
+            "implied_total": "225.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
