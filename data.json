@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-28 01:20:35 UTC",
+    "last_updated": "2026-11-28 09:58:01 UTC",
     "slate": [
         {
             "id": "401910046",
@@ -21,7 +21,7 @@
                 "l5_win_rate": "50%"
             },
             "consensus_spread": "ORL -3.5",
-            "implied_total": "218.5",
+            "implied_total": "220.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -128,7 +128,7 @@
             "home": "Charlotte Hornets",
             "away": "Brooklyn Nets",
             "home_record": "4-13",
-            "away_record": "4-13",
+            "away_record": "4-14",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -249,7 +249,7 @@
             "home": "Chicago Bulls",
             "away": "Indiana Pacers",
             "home_record": "6-12",
-            "away_record": "6-12",
+            "away_record": "6-13",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -262,8 +262,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "CHI -2.5",
+            "implied_total": "234.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -369,7 +369,7 @@
             "time": "Sat, November 28th at 8:00 PM EST",
             "home": "Milwaukee Bucks",
             "away": "Oklahoma City Thunder",
-            "home_record": "2-17",
+            "home_record": "2-18",
             "away_record": "10-9",
             "home_metrics": {
                 "l5_ppg": 108.5,
@@ -383,8 +383,8 @@
                 "l5_diff": -1.5,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "OKC -11.5",
+            "implied_total": "228.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
@@ -491,7 +491,7 @@
             "home": "Houston Rockets",
             "away": "Philadelphia 76ers",
             "home_record": "14-5",
-            "away_record": "15-4",
+            "away_record": "16-4",
             "home_metrics": {
                 "l5_ppg": 108.5,
                 "l5_opp_ppg": 110.0,
@@ -504,8 +504,8 @@
                 "l5_diff": 3.8,
                 "l5_win_rate": "50%"
             },
-            "consensus_spread": "Spread TBD",
-            "implied_total": "N/A",
+            "consensus_spread": "HOU -12.5",
+            "implied_total": "220.5",
             "model_edge": "Active Edge Scan",
             "home_starters": [
                 {
